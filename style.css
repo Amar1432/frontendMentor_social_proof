@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  background-color: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+.home {
+  width: 80%;
+}
+
+.home .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.home .upper .info {
+  width: 50%;
+}
+
+.home .upper .info .info-heading {
+  margin-bottom: 10px;
+}
+
+.home .upper .info .info-heading h1 {
+  color: #502050;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.home .upper .info .info-description {
+  color: #937b92;
+}
+
+.home .upper .ratings {
+  width: 50%;
+}
+
+.home .upper .ratings .rating::before {
+  content: url(images/icon-star.svg) url(images/icon-star.svg) url(images/icon-star.svg) url(images/icon-star.svg) url(images/icon-star.svg);
+  margin: 0 24px;
+}
+
+.home .upper .ratings .rating {
+  background-color: #f7f2f7;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  color: #502050;
+  font-weight: 700;
+  width: 75%;
+}
+
+.home .upper .ratings .rating:nth-child(2) {
+  position: relative;
+  left: 50px;
+}
+
+.home .upper .ratings .rating:nth-child(3) {
+  position: relative;
+  left: 100px;
+}
+
+.home .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .lower .card {
+  width: 30%;
+  background-color: #502050;
+  margin-right: 24px;
+  padding: 18px;
+  color: #f7f2f7;
+  border-radius: 6px;
+}
+
+.home .lower .card .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.home .lower .card .user-info img {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: 18px;
+}
+
+.home .lower .card .user-info .user h4 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.home .lower .card .user-info .user p {
+  color: #ee68a4;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.home .lower .card .user-desc {
+  padding: 10px;
+  font-size: 0.76rem;
+}
+
+.card:nth-child(2) {
+  position: relative;
+  top: 12px;
+}
+
+.card:nth-child(3) {
+  position: relative;
+  top: 24px;
+}
+/*# sourceMappingURL=style.css.map */

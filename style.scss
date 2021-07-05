@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+$magenta: hsl(300, 43%, 22%);
+$pink: hsl(333, 80%, 67%);
+
+$darkMagenta: hsl(303, 10%, 53%);
+$lightMagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  background-color: $white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+.home {
+  width: 80%;
+
+  .upper {
+    display: flex;
+    margin-bottom: 40px;
+
+    .info {
+      width: 50%;
+
+      .info-heading {
+        margin-bottom: 10px;
+        h1 {
+          color: $magenta;
+          font-weight: 700;
+          font-size: 2.2rem;
+        }
+      }
+
+      .info-description {
+        color: $darkMagenta;
+      }
+    }
+    .ratings {
+      width: 50%;
+
+      .rating::before {
+        content: url(images/icon-star.svg) url(images/icon-star.svg)
+          url(images/icon-star.svg) url(images/icon-star.svg)
+          url(images/icon-star.svg);
+        margin: 0 24px;
+      }
+
+      .rating {
+        background-color: $lightMagenta;
+        margin-bottom: 12px;
+        padding: 12px;
+        border-radius: 8px;
+        color: $magenta;
+        font-weight: 700;
+        width: 75%;
+      }
+      .rating:nth-child(2) {
+        position: relative;
+        left: 50px;
+      }
+
+      .rating:nth-child(3) {
+        position: relative;
+        left: 100px;
+      }
+    }
+  }
+
+  .lower {
+    display: flex;
+
+    .card {
+      width: 30%;
+      background-color: $magenta;
+      margin-right: 24px;
+      padding: 18px;
+      color: $lightMagenta;
+      border-radius: 6px;
+
+      .user-info {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        img {
+          border-radius: 50%;
+          height: 50px;
+          margin-right: 18px;
+        }
+
+        .user {
+          h4 {
+            color: $white;
+            font-weight: 700;
+            margin-bottom: 4px;
+          }
+          p {
+            color: $pink;
+            font-size: 0.8rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .user-desc {
+        padding: 10px;
+        font-size: 0.76rem;
+      }
+    }
+  }
+}
+.card:nth-child(2) {
+  position: relative;
+  top: 12px;
+}
+
+.card:nth-child(3) {
+  position: relative;
+  top: 24px;
+}
